@@ -42,4 +42,19 @@ export class AgeMass {
   whatIsMyWeightOn(conversion_weight) {
     return (this.earthWeight/9.81*conversion_weight);
   }
+
+  howManyEarthYearsLeft(smoker,obese,diebetic,excercise,conversion_year) {
+      let avgAgeDed = 78.6;
+      if (smoker === true) {avgAgeDed = avgAgeDed - 7.5}
+      if (obese === true) {avgAgeDed = avgAgeDed - 10}
+      if (diebetic === true) {avgAgeDed = avgAgeDed - 8.5}
+      if (excercise === true) {avgAgeDed = avgAgeDed + 7}
+      let yearsLeft = avgAgeDed - this.earthAge;
+      return yearsLeft;
+    }
+
+
+  }
+
+  }
 }

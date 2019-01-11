@@ -60,6 +60,9 @@ export class AgeMass {
     }
 
     howManyPlanetYearsLeft(any) {
+      if (any <= 0) {
+        return (-any);
+      }
       let answer = [];
       for (let i = 0; i < mvemjsunp.length; i++) {
         answer.push(parseFloat((any/mvemjsunp[i].year).toFixed(2)));

@@ -31,5 +31,8 @@ describe("Solar", function(){
     expect(user_info.howManyPlanetYearsLeft(user_info.howManyEarthYearsLeft(1,1,1,1))).toEqual([110.44, 43.24, 26.6, 14.14, 2.24, 0.9, 0.32, 0.16, 0.11]);
   })
 
+  it ("If you are older than the life expectancy, return how many years you are past it.", function(){
+    expect(user_info.howManyPlanetYearsLeft(-10)).toEqual(10);
+  })
 
 });

@@ -59,8 +59,11 @@ export class AgeMass {
       return yearsLeft;
     }
 
-    howManyPlanetYearsLeft(any,conversion_year) {
-      console.log("yearsleft2 = ", any);
-      return (any/conversion_year);
+    howManyPlanetYearsLeft(any) {
+      let answer = [];
+      for (let i = 0; i < mvemjsunp.length; i++) {
+        answer.push(parseFloat((any/mvemjsunp[i].year).toFixed(2)));
+      }
+      return answer;
     }
 }

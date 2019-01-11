@@ -25,6 +25,8 @@ let uranus = new Planet(84.0205, 42718, 8.69);
 let neptune = new Planet(164.8, 89666, 11.15);
 let pluto = new Planet(248, 90560, .62);
 
+export {mercury,venus};
+
 export class AgeMass {
   constructor(user_age,user_weight) {
     this.earthAge = user_age;

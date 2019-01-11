@@ -1,4 +1,4 @@
-import { Solar } from './../src/solar.js';
+import { Solar, AgeMass } from '../src/solar.js';
 
 describe("Solar", function(){
   var user_info;

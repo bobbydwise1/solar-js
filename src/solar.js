@@ -15,15 +15,15 @@ export class Planet {
   }
 }
 
-mercury = new Planet(0.240846, 0.5, 3.7);
-venus = new Planet(0.615198, 1.92, 8.87);
-earth = new Planet(1, 365.2425, 9.81);
-mars = new Planet(1.88082, 686.971, 3.72076);
-jupiter = new Planet(11.862, 10475.8, 24.79);
-saturn = new Planet(29.4571, 24491.07, 10.44);
-uranus = new Planet(84.0205, 42718, 8.69);
-neptune = new Planet(164.8, 89666, 11.15);
-pluto = new Planet(248, 90560, .62);
+let mercury = new Planet(0.240846, 0.5, 3.7);
+let venus = new Planet(0.615198, 1.92, 8.87);
+let earth = new Planet(1, 365.2425, 9.81);
+let mars = new Planet(1.88082, 686.971, 3.72076);
+let jupiter = new Planet(11.862, 10475.8, 24.79);
+let saturn = new Planet(29.4571, 24491.07, 10.44);
+let uranus = new Planet(84.0205, 42718, 8.69);
+let neptune = new Planet(164.8, 89666, 11.15);
+let pluto = new Planet(248, 90560, .62);
 
 export class AgeMass {
   constructor(user_age,user_weight) {

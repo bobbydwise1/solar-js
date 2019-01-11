@@ -1,6 +1,5 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
-import { Solar } from './solar.js';
-import 'faker';
-var faker = require('faker');
+import './styles.css';
+import { Planet, AgeMass } from './solar.js';

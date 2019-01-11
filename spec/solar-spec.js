@@ -1,15 +1,15 @@
 import { Solar } from './../src/solar.js';
 
 describe("Solar", function(){
-  var haiku1;
+  var user_info;
   beforeEach(function() {
-    solar = new Solar(1,1,1)
+    user_info = new AgeMass(33,100); //Age 33, 100 Newtons
     );
   });
 
-  it ( "determines whether line1 equals 5 syllables for haiku 1", function(){
-    console.log(haiku1.syllableChecker1())
-    expect(haiku1.syllableChecker1()).toBe(false)
+  it ( "Creates an object that has the user's Age and Weight", function(){
+    expect(user_info.earthAge).toBe(33);
+    expect(user_info.earthWeight).toBe(100);
   })
 
 });

@@ -1,10 +1,9 @@
-import { Solar, AgeMass } from '../src/solar.js';
+import { Planet, AgeMass } from '../src/solar.js';
 
 describe("Solar", function(){
   var user_info;
   beforeEach(function() {
     user_info = new AgeMass(33,100); //Age 33, 100 Newtons
-    );
   });
 
   it ( "Creates an object that has the user's Age and Weight", function(){

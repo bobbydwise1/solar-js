@@ -43,18 +43,24 @@ export class AgeMass {
     return (this.earthWeight/9.81*conversion_weight);
   }
 
-  howManyEarthYearsLeft(smoker,obese,diebetic,excercise,conversion_year) {
+  howManyEarthYearsLeft(smoker,obese,diebetic,excercise) {
       let avgAgeDed = 78.6;
-      if (smoker === true) {avgAgeDed = avgAgeDed - 7.5}
-      if (obese === true) {avgAgeDed = avgAgeDed - 10}
-      if (diebetic === true) {avgAgeDed = avgAgeDed - 8.5}
-      if (excercise === true) {avgAgeDed = avgAgeDed + 7}
+      console.log("avgAgeDed" + avgAgeDed);
+      if (smoker === 1) {avgAgeDed = avgAgeDed - 7.5}
+      console.log("avgAgeDed = " + avgAgeDed);
+      if (obese === 1) {avgAgeDed = avgAgeDed - 10}
+            console.log("avgAgeDed = " + avgAgeDed);
+      if (diebetic === 1) {avgAgeDed = avgAgeDed - 8.5}
+            console.log("avgAgeDed = " + avgAgeDed);
+      if (excercise === 1) {avgAgeDed = avgAgeDed + 7}
+            console.log("avgAgeDed = " + avgAgeDed);
       let yearsLeft = avgAgeDed - this.earthAge;
+      console.log("yearsleft = " + yearsLeft);
       return yearsLeft;
     }
 
-
-  }
-
-  }
+    howManyPlanetYearsLeft(any,conversion_year) {
+      console.log("yearsleft2 = ", any);
+      return (any/conversion_year);
+    }
 }

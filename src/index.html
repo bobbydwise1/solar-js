@@ -13,18 +13,28 @@
       <form id="solarAgeForm" class="form-group" action="index.html" method="post">
         <div class="container jumbotron">
             <label for="user_age">Enter your age in Earth Years</label>
-            <input id="age" type="number" name="user_age" value="1" min="1" max="150">
+            <input id="user_age" type="number" name="user_age" min="1" max="150">
             <br>
-            <label class="checkbox-inline"><input type="checkbox" name="le" id="smoker" value="1">I'm a smoker.</label>
-            <label class="checkbox-inline"><input type="checkbox" name="le" id="fat"  value="1">I'm obese.</label>
-            <label class="checkbox-inline"><input type="checkbox" name="le" id="diabetic"  value="1">I'm diabetic.</label>
-            <label class="checkbox-inline"><input type="checkbox" name="le" id="excercise"  value="1">I excercise.</label>
+            <label class="checkbox-inline"><input type="checkbox" name="smoker" id="smoker" value="smoke">I'm a smoker.</label>
+            <label class="checkbox-inline"><input type="checkbox" name="fat" id="fat"  value="fat">I'm obese.</label>
+            <label class="checkbox-inline"><input type="checkbox" name="diabetic" id="diabetic"  value="diabetic">I'm diabetic.</label>
+            <label class="checkbox-inline"><input type="checkbox" name="excercise" id="excercise"  value="excercise">I excercise.</label>
             <br>
             <button type="submit" name="button">Submit!</button>
         </div>
       </form>
       <div id="output-box" class="container jumbotron">
-        <h4>Your results are:<span id="results-out"></span></h4>
+        <p>Your Mecury Years age is:  <span id="output-mercury"></span></p>
+        <p>Your Venus Years age is:  <span id="output-venus"></span></p>
+        <p>Your Earth Years age is:  <span id="output-earth"></span></p>
+        <p>Your Mars Years age is:  <span id="output-mars"></span></p>
+        <p>Your Jupiter Years age is:  <span id="output-jupiter"></span></p>
+        <p>Your Saturn Years age is:  <span id="output-saturn"></span></p>
+        <p>Your Uranus Years age is:  <span id="output-uranus"></span></p>
+        <p>Your Neptune Years age is:  <span id="output-neptune"></span></p>
+        <p>Your Pluto Years age is:  <span id="output-pluto"></span></p>
+        <br>
+        <p>Your earth LE is:  <span id="output-lifeExpect"></span></p>
       </div>
     </div>  <!-- end of body -->
   </body>

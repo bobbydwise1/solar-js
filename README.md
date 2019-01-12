@@ -12,8 +12,10 @@ _Write an application that determines a user’s age based on a different planet
 
 _Setup requires the installation of node package manager (npm), jasmine, and karma._
 
-* TBD.  Write more steps.
-* TBD.  Write more steps.
+* Clone the project from the git hub repository.
+* Go to the project root directory.
+* type "npm install"
+* type "karma install"
 
 
 ## Technologies Used
@@ -56,29 +58,28 @@ A user interface is not required.
 
 * Returns their age in Mercury years. (A Mercury year is .24 Earth years.)
   * Input:  1
-  * Output: 1 / 0.24 = ?
+  * Output: 1 / 0.24 = 4.15
 * Returns their age in Venus years. (A Venus year is .62 Earth years.)
   * Input:  1
-  * Output: 1 / 0.62 = ?
+  * Output: 1 / 0.62 = 1.63
 * Returns their age in Mars years. (A Mars year is 1.88 Earth years.)
   * Input:  1
-  * Output: 1 / 1.88 = ?
+  * Output: 1 / 1.88 = 0.53
 * Returns their age in Jupiter years. (A Jupiter year is 11.86 Earth years.)
   * Input:  1
-  * Output: 1 / 11.86 = ?
+  * Output: 1 / 11.86 = 0.08
 * Determines how many years a user has left to live on each planet:
   * Create an equation that gives the life expectancy (LE) of a person based on some boolean functions.  Then apply a planet year conversion to this number.
     * Input:  create some true or false booleans.  If these are true, they will add a certian number of years to a person's LE.
     * Output:  (psuedo code:)  if ((x && y) && z) === true) {LE = 72 earth years}
-    (72 (earth years)) / (other planet conversion factor) = answer
+    (72 (earth years)) / (other planet conversion factor) = (converted LE on other planet)
 * If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy.
-  * Input:  The user says they are age 33.  Their LE is 72.
-  * Output:  72 - 33 = ?
-
+  * Input:  The user says they are age 100.  The LE is 72.
+  * Output:  72 - 100 = -28 (ex: they are 28 years beyond LE.)
 
 ## Known bugs
 
-* TBD.
+* Not all of the functionality for the user interface is in place.
 
 ### License
 
